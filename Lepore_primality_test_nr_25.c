@@ -187,7 +187,7 @@ if(mpz_cmp(N,p)>=0){
  if(mpz_cmp(b,venticinque)==0 && mpz_cmp(p,N)==0){
 gmp_printf ("\nN=%Zd\n\n\n\n is primes or Lepore's pseudoprimes\n\n\n\n",N);
 
-}else if(mpz_cmp(p,uno)==0 && mpz_cmp(mom3,zero)==0){
+}else if(mpz_cmp(p,uno)==0 || ( mpz_cmp(mom3,zero)==0 && mpz_cmp(p,N)!=0)){
   gmp_printf ("\nN=%Zd\n\n\n\n is NOT primes \n\n\n\n",N,p);
 
  }
